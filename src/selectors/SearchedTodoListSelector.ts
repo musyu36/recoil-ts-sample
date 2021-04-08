@@ -3,6 +3,7 @@ import { todoListState } from "../atoms/TodoListAtom";
 import { searchTextFormState } from "../atoms/SearchTextFormAtom";
 import Todo from "../types/Todo";
 
+// Atomの値を用いて何らかの計算や加工・副作用を処理した結果を返す
 export const searchedTodoListSelector = selector<Todo[]>({
   key: "searchedTodoListSelector",
   get: ({ get }) => {
